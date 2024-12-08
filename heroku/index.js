@@ -11,6 +11,9 @@ var express = require('express');
 var app = express();
 var xhub = require('express-x-hub');
 
+require('dotenv').config();
+// console.log(process.env)
+
 app.set('port', (process.env.PORT || 5000));
 app.listen(app.get('port'));
 
